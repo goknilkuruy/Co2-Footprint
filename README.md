@@ -89,15 +89,6 @@ Co2-Footprint/
 
 ---
 
-## Lokal starten
-
-Es handelt sich um eine **statische Website ohne Build-Schritt**. Damit absolute Pfade wie `/Home/home.html` und `/Image/` funktionieren, muss die Seite über einen **lokalen Webserver** geöffnet werden (nicht per `file://`).
-
-### Option 1: VS Code Live Server
-
-1. Erweiterung **Live Server** in VS Code installieren.
-2. Rechtsklick auf `Home/home.html` → **„Open with Live Server“**.
-3. Im Browser erscheint die Startseite (z. B. `http://127.0.0.1:5500/Home/home.html`).
 
 ## Technologien
 
