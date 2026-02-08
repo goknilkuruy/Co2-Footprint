@@ -1,0 +1,524 @@
+html,
+body {
+    background: linear-gradient(to bottom right, #0a0a0a, #0d1b2a, #1b263b, #000000);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+}
+
+body {
+    color: rgb(0, 0, 0);
+    background-size: cover; /* Stellt sicher dass das Hintergrundbild den gesamten Bereich abdeckt */
+    background-attachment: fixed; /* Fixiert den Hintergrund beim Scrollen */
+  }
+
+.header {
+    background-color: rgba(0, 0, 0, 0.8); /* Transparenter schwarzer Überzug */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 10; 
+}
+
+.site-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+}
+  
+/* Logo der Website */
+
+.container-fluid {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    display: flex;
+  }
+
+/* logo und menü positionierung je nach Schriftkultur */
+.navbar-brand {
+    margin-right: auto;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+html[dir="rtl"] .navbar-brand,
+[dir="rtl"] .navbar-brand {
+    margin-right: 0;
+    margin-left: auto;
+    order: 2;
+}
+
+html[dir="rtl"] .navbar-nav,
+[dir="rtl"] .navbar-nav {
+    margin-left: 0;
+    margin-right: auto;
+    order: 1;
+}
+
+html[dir="rtl"] .navbar-toggler,
+[dir="rtl"] .navbar-toggler {
+    order: 3;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    transform: translateX(-50%); /* Zentriert die Indikatoren */
+}
+
+
+  .carousel-inner img {
+    max-height: 800px; 
+    object-fit: cover; 
+  }
+  
+
+  .header-container {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 64px;       
+    font-weight: 700;       
+    color: white;
+    padding: 40px 20px;
+    text-align: left;       
+    line-height: 1.2;       
+  }
+
+
+
+  .container{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:rgb(255, 248, 248);
+    padding: 10px;
+  }
+
+    .container h1 {
+        font-size: 2.5em;
+        margin: 20px 0;
+    }
+
+    .container p {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    .container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .container a {
+        color: rgb(255, 255, 254);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    .container a:hover {
+        color: white;
+    } 
+
+    .container button {
+      background-color: rgb(8, 39, 3);
+      color: rgb(255, 255, 255);
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  .container button:hover {
+      background-color: rgb(12, 58, 5);
+  }
+
+
+
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+  }
+.about-green {
+  color: rgb(87, 232, 87);
+}
+
+/* Contact Section Styling */
+#contact {
+    width: 100%;
+    padding: 40px 20px;
+    margin: 40px 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+#contact .container-fluid {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+#contact .row {
+    margin: 0;
+    width: 100%;
+}
+
+#contact .col-12,
+#contact .col-md-10,
+#contact .col-lg-8 {
+    padding: 0 15px;
+    width: 100%;
+}
+
+#contact .card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    min-height: auto;
+}
+
+#contact .card-body {
+    padding: 40px;
+    width: 100%;
+}
+
+#contact .logo-co2 {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 30px auto;
+    position: relative;
+    top: 0;
+}
+
+#contact .card-title {
+    color: #1b263b;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#contact .card-subtitle {
+    color: #28a745;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+#contact .card-text {
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#contact form {
+    width: calc(100% + 80px);
+    max-width: none;
+    margin-left: -40px;
+    margin-right: -40px;
+    box-sizing: border-box;
+}
+
+#contact .form-label {
+    color: #1b263b;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1.25em;
+}
+
+#contact .form-control {
+    width: 100%;
+    padding: 18px 22px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1.25em;
+    line-height: 1.5;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+#contact .form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    outline: none;
+}
+
+#contact textarea.form-control {
+    resize: vertical;
+    min-height: 260px;
+}
+
+#contact .btn-primary {
+    background-color: #28a745;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contact .btn-primary:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}
+
+#contact #formMessage {
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 20px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+  /* Logo CO₂ */
+  .logo-co2 {
+    max-width: 200px;
+    height: auto;
+    position: relative;
+    display: block;
+    top: 20px;
+    margin-bottom: 20px auto;
+  }
+
+  footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+
+  /* Media Queries (responsive Design)*/
+  
+/* Desktop Design (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .header-container {
+      font-size: 64px;
+      padding: 60px 40px;
+      text-align: left;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  
+  .carousel-inner img {
+      max-height: 800px;
+  }
+  
+  .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+  }
+  
+  .container h1 {
+      font-size: 3em;
+      margin: 30px 0;
+  }
+  
+  .container p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 15px auto;
+  }
+  
+  #contact {
+      padding: 60px 40px;
+  }
+  
+  #contact .col-lg-8 {
+      max-width: 800px;
+      margin: 0 auto;
+  }
+  
+  #contact .card-body {
+      padding: 50px;
+  }
+  
+  #contact .card-title {
+      font-size: 3em;
+  }
+  
+  #contact .card-subtitle {
+      font-size: 1.3em;
+  }
+  
+  .row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+  }
+  
+  .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 0;
+  }
+  
+  .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .about-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 40px;
+  }
+  
+  .site-title {
+      font-size: 2.5em;
+  }
+}
+
+/* Cards auf Tablets */
+@media (max-width: 768px) {
+  .header-container {
+      font-size: 42px;
+      padding: 20px;
+      text-align: center;
+  }
+  .carousel-inner img {
+      max-height: 300px;
+  }
+  
+  .row .col-md-4 {
+      margin-bottom: 20px;
+  }
+  
+  .card {
+      margin-bottom: 20px;
+  }
+  
+  #contact {
+      padding: 30px 15px;
+  }
+  
+  #contact .col-md-10 {
+      padding: 0 10px;
+  }
+  
+  #contact .card-body {
+      padding: 30px 20px;
+  }
+  
+  #contact .card-title {
+      font-size: 2em;
+  }
+  
+  #contact .card-subtitle {
+      font-size: 1.1em;
+  }
+  
+  #contact .logo-co2 {
+      max-width: 150px;
+      margin-bottom: 20px;
+  }
+}
+
+/* Cards auf Smartphones */
+@media (max-width: 480px) {
+  .header-container {
+      font-size: 32px;
+  }
+  
+  .row .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+  
+  .card-img-top {
+      max-height: 200px;
+      object-fit: cover;
+  }
+  
+  .card-body {
+      padding: 15px;
+  }
+  
+  h2.fs-1 {
+      font-size: 1.5em !important;
+      padding: 20px 10px !important;
+  }
+  
+  #contact {
+      padding: 20px 10px;
+  }
+  
+  #contact .card-body {
+      padding: 20px 15px;
+  }
+  
+  #contact .card-title {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+  }
+  
+  #contact .card-subtitle {
+      font-size: 1em;
+      margin-bottom: 15px;
+  }
+  
+  #contact .card-text {
+      font-size: 0.95em;
+      margin-bottom: 20px;
+  }
+  
+  #contact .logo-co2 {
+      max-width: 120px;
+      margin-bottom: 15px;
+  }
+  
+  #contact .form-control {
+      padding: 14px 16px;
+      font-size: 1.1em;
+  }
+  #contact textarea.form-control {
+      min-height: 200px;
+  }
+  
+  #contact .btn-primary {
+      padding: 10px 25px;
+      font-size: 1em;
+  }
+}

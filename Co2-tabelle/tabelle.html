@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CO₂-Footprint Transparenz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="tabelle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=DM+Serif+Text:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(to right, #0a0a0a, #1b263b);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/Image/logo3.jpg" alt="logo" width="100"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="/Home/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="/Co2-Infos/Co2.Infos.html">CO₂ Nachrichten Informationen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5" href="/Co2-tabelle/tabelle.html">CO₂ Emissionsdaten</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="/Home/home.html#about">Über uns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="/Home/home.html#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="text-dark text-center">
+        <div class="header-container">
+        </div>
+        <h1 class="site-title">🌿 Green Energy 🌿 </h1>
+    </header>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        </div>
+
+    <main>
+        <div class="container">
+            <h1 class="text-center text-white p-5 mb-5 mt-5">CO₂-Emissionen: Länder und Unternehmen</h1>
+
+            <section class="mb-5">
+                <h2 class="text-center text-white mb-4">Emissionsdaten </h2>
+                
+                <div class="filter-controls mb-3">
+                    <input type="text" id="filter-land" class="form-control me-2" placeholder="Nach Land filtern" style="max-width: 300px; display: inline-block;">
+                    <input type="text" id="filter-unternehmen" class="form-control" placeholder="Nach Unternehmen filtern" style="max-width: 300px; display: inline-block;">
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Land</th>
+                                <th>Unternehmen</th>
+                                <th>Sektor</th>
+                                <th>Jahres-Emissionen</th>
+                                <th>Anpassung (J/N)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Land">Deutschland</td>
+                                <td data-label="Unternehmen">RWE AG</td>
+                                <td data-label="Sektor">Energie</td>
+                                <td data-label="Jahres-Emissionen (kt CO₂eq)">60.600 </td>
+                                <td data-label="Anpassung (J/N)">J</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Land">China</td>
+                                <td data-label="Unternehmen">CHN Energy</td>
+                                <td data-label="Sektor">Energie</td>
+                                <td data-label="Jahres-Emissionen (kt CO₂eq)">1.378.000</td>
+                                <td data-label="Anpassung (J/N)">N</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Land">USA</td>
+                                <td data-label="Unternehmen">ExxonMobil</td>
+                                <td data-label="Sektor">Rohstoffe</td>
+                                <td data-label="Jahres-Emissionen (kt CO₂eq)">503.000</td>
+                                <td data-label="Anpassung (J/N)">J</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Land">Russland</td>
+                                <td data-label="Unternehmen">GazProm</td>
+                                <td data-label="Sektor">Rohstoffe</td>
+                                <td data-label="Jahres-Emissionen (kt CO₂eq)">938.000</td>
+                                <td data-label="Anpassung (J/N)">N</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Land">Frankreich</td>
+                                <td data-label="Unternehmen">AutoMobil SA</td>
+                                <td data-label="Sektor">Transport</td>
+                                <td data-label="Jahres-Emissionen (kt CO₂eq)">85.000</td>
+                                <td data-label="Anpassung (J/N)">J</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Land">Indien</td>
+                                <td data-label="Unternehmen">Coal India</td>
+                                <td data-label="Sektor">Rohstoffe</td>
+                                <td data-label="Jahres-Emissionen (kt CO₂eq)">1.391.000</td>
+                                <td data-label="Anpassung (J/N)">J</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Land">Deutschland</td>
+                                <td data-label="Unternehmen">Deutsche Bahn AG</td>
+                                <td data-label="Sektor">Transport</td>
+                                <td data-label="Jahres-Emissionen (kt CO₂eq)">95.000</td>
+                                <td data-label="Anpassung (J/N)">J</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Land">Frankreich</td>
+                                <td data-label="Unternehmen">TotalEnergies</td>
+                                <td data-label="Sektor">Rohstoffe</td>
+                                <td data-label="Jahres-Emissionen (kt CO₂eq)">46.000</td>
+                                <td data-label="Anpassung (J/N)">J</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Land">Brasilien</td>
+                                <td data-label="Unternehmen">Petrobras</td>
+                                <td data-label="Sektor">Energie</td>
+                                <td data-label="Jahres-Emissionen (kt CO₂eq)">11.210</td>
+                                <td data-label="Anpassung (J/N)">N</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Land">Australien</td>
+                                <td data-label="Unternehmen">BHP Billiton</td>
+                                <td data-label="Sektor">Bergbau</td>
+                                <td data-label="Jahres-Emissionen (kt CO₂eq)">11.160</td>
+                                <td data-label="Anpassung (J/N)">N</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Land">Deutschland</td>
+                                <td data-label="Unternehmen">Heidelberg Materials</td>
+                                <td data-label="Sektor">Rohstoffe</td>
+                                <td data-label="Jahres-Emissionen (kt CO₂eq)">63.900</td>
+                                <td data-label="Anpassung (J/N)">N</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Land">Japan</td>
+                                <td data-label="Unternehmen">Toyota Motor Corp.</td>
+                                <td data-label="Sektor">AutoMobil</td>
+                                <td data-label="Jahres-Emissionen (kt CO₂eq)">30.780</td>
+                                <td data-label="Anpassung (J/N)">J</td>
+                            </tr>
+                            </tbody>
+                    </table>
+                </div>
+            </section>
+
+    </main>
+  <!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2025 CO₂-Footprint Initiative. Alle Rechte vorbehalten.</p>
+      <a href="#">Impressum</a>|<a href="#">Datenschutz</a>|<a href="#">Kontakt</a>
+</footer>
+
+<!--End of Footer-->
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</html>

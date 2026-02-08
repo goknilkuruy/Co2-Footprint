@@ -1,0 +1,200 @@
+html,
+body {
+    background: linear-gradient(to bottom right, #0a0a0a, #0d1b2a, #1b263b, #000000);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+}
+
+body {
+    color: rgb(0, 0, 0);
+    background-size: cover; /* Stellt sicher, dass das Hintergrundbild den gesamten Bereich abdeckt */
+    background-attachment: fixed; /* Fixiert den Hintergrund beim Scrollen */
+  }
+
+.header {
+    background-color: rgba(0, 0, 0, 0.8); /* Transparenter schwarzer Überzug */
+    color: white;
+    padding: 20px;
+    position: relative;
+    z-index: 10; 
+}
+
+.site-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+}
+  
+/* Logo der Website */
+
+.container-fluid {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    display: flex;
+  }
+
+/* Logo und menü positionierung je nach Schriftkultur */
+.navbar-brand {
+    margin-right: auto;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+/* Logo rechts, menü links */
+html[dir="rtl"] .navbar-brand,
+[dir="rtl"] .navbar-brand {
+    margin-right: 0;
+    margin-left: auto;
+    order: 2;
+}
+
+html[dir="rtl"] .navbar-nav,
+[dir="rtl"] .navbar-nav {
+    margin-left: 0;
+    margin-right: auto;
+    order: 1;
+}
+
+html[dir="rtl"] .navbar-toggler,
+[dir="rtl"] .navbar-toggler {
+    order: 3;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    transform: translateX(-50%); /* Zentriert die Indikatoren */
+}
+
+
+  .carousel-inner img {
+    max-height: 800px; 
+    object-fit: cover; 
+  }
+
+  @media (max-width: 768px) {
+    .carousel-inner img {
+      max-height: 300px;
+    }
+    @media (max-width: 480px) {
+      .carousel-inner img {
+        max-height: 300px;
+      }
+    }
+  }
+  
+  
+
+  .header-container {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 64px;       
+    font-weight: 700;       
+    color: white;
+    padding: 40px 20px;
+    text-align: left;       
+    line-height: 1.2;       
+  }
+
+  .site-description {
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+.img-thumbnail {
+    width: 35%;
+    position: relative;
+    left: 25%;
+    height: auto;
+    background: none; /* Entfernt den weißen Hintergrund */
+} 
+
+.header {
+    position: relative;
+    background-image: url('https://thebulletin.org/wp-content/uploads/2020/03/Burning-Planet.jpg.webp');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .header h2 {
+    position: absolute;
+    bottom: 1rem;  
+    left: 1rem;     
+    font-style: italic;
+    line-height: 1.2;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    text-align: left;
+    max-width: 90%;
+  }
+  
+  /* Mobil: ≤ 767px */
+  @media (max-width: 767.98px) {
+    .header h2 {
+      font-size: 1.2rem;
+      left: 0.8rem;
+      bottom: 0.8rem;
+    }
+  }
+  
+  /* Tablet: 768px – 1199px */
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    .header h2 {
+      font-size: 2rem;
+      left: 1.5rem;
+      bottom: 1.5rem;
+    }
+  }
+  
+  /* Desktop: ≥ 1200px */
+  @media (min-width: 1200px) {
+    .header h2 {
+      font-size: 2.8rem;
+      left: 2rem;
+      bottom: 2rem;
+    }
+  }
+  
+.container {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 248, 248);
+    padding: 10px;
+}
+
+
+  
+  footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }

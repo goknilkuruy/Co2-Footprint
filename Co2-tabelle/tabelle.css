@@ -1,0 +1,319 @@
+html,
+body {
+    background: linear-gradient(to bottom right, #0a0a0a, #0d1b2a, #1b263b, #000000);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+.site-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Logo und menü-Positionierung je nach Schriftkultur */
+.navbar-brand {
+    margin-right: auto;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+html[dir="rtl"] .navbar-brand,
+[dir="rtl"] .navbar-brand {
+    margin-right: 0;
+    margin-left: auto;
+    order: 2;
+}
+
+html[dir="rtl"] .navbar-nav,
+[dir="rtl"] .navbar-nav {
+    margin-left: 0;
+    margin-right: auto;
+    order: 1;
+}
+
+html[dir="rtl"] .navbar-toggler,
+[dir="rtl"] .navbar-toggler {
+    order: 3;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+}
+
+.container h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Filter-Kontrollbereich */
+.filter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-controls input {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 12px;
+    border: 2px solid #1b263b;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.filter-controls input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.filter-controls input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+/* Tabellen-Container */
+.table-container {
+    overflow-x: auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Tabellen-Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: transparent;
+    margin: 0;
+}
+
+/* Tabellenkopf */
+thead {
+    background: linear-gradient(135deg, #1b263b, #0d1b2a);
+}
+
+th {
+    padding: 15px 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #ffffff;
+    border-bottom: 2px solid #4CAF50;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+th:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Sortier-Indikatoren */
+th.sort-asc::after {
+    content: " �";
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+th.sort-desc::after {
+    content: " �";
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Tabellenkörper */
+tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+td {
+    padding: 12px;
+    color: #e0e0e0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 14px;
+}
+
+/* Spezifische Spalten-Styling */
+td:nth-child(4) {
+    font-weight: 600;
+    color: #ffeb3b;
+}
+
+td:nth-child(5) {
+    text-align: center;
+    font-weight: bold;
+}
+
+td:nth-child(5):contains("J") {
+    color: #4CAF50;
+}
+
+td:nth-child(5):contains("N") {
+    color: #f44336;
+}
+
+/* Footer */
+footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #66BB6A;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .container h1 {
+        font-size: 2em;
+    }
+
+    .filter-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-controls input {
+        min-width: 100%;
+        max-width: none;
+        margin-bottom: 10px;
+    }
+
+    .table-container {
+        padding: 10px;
+        margin: 0 -10px;
+    }
+
+    table {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody {
+        display: block;
+    }
+
+    tbody tr {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding: 15px 12px;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    td {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        border: none;
+        padding: 0;
+        text-align: left;
+        white-space: normal;
+    }
+
+    td::before {
+        content: attr(data-label) ":";
+        flex: 0 0 40%;
+        font-weight: 600;
+        color: #4CAF50;
+        text-transform: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container h1 {
+        font-size: 1.8em;
+    }
+
+    .site-title {
+        font-size: 1.5em;
+    }
+
+    tbody tr {
+        padding: 12px 10px;
+    }
+
+    td {
+        gap: 8px;
+        font-size: 13px;
+    }
+
+    td::before {
+        flex-basis: 45%;
+        font-size: 12px;
+    }
+}
+
+/* Optimierungen für den Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .filter-controls input {
+        background-color: rgba(255, 255, 255, 0.08);
+        border-color: #2c3e50;
+    }
+
+    .table-container {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-color: rgba(255, 255, 255, 0.05);
+    }
+}
